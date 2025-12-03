@@ -1,0 +1,141 @@
+/* style.css - sCAIF Webapp modern theme */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  color: #444;
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#role-select {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#role-select h2 {
+  margin-bottom: 1rem;
+}
+
+#role-select .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#teacherBtn {
+  background: #4CAF50;
+  color: #fff;
+}
+
+#teacherBtn:hover {
+  background: #45a049;
+}
+
+#learnerBtn {
+  background: #2196F3;
+  color: #fff;
+}
+
+#learnerBtn:hover {
+  background: #1976D2;
+}
+
+.editor {
+  margin-top: 2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  font-size: 0.95rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  background: #fff;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.actions button {
+  flex: 1;
+}
+
+pre {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.docs {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.docs h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.assignment-import {
+  margin-top: 1rem;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}

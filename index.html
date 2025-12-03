@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sCAIF Webapp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://uploads.onecompiler.io/43vnmzr4w/446heg8kg/image_1764798293311.png" alt="sCAIF Logo" class="logo">
+    <h1>sCAIF Webapp</h1>
+  </header>
+
+  <main>
+    <!-- Role Selection -->
+    <section id="role-select">
+      <h2>Select Your Role</h2>
+      <div class="buttons">
+        <button id="teacherBtn">Teacher</button>
+        <button id="learnerBtn">Learner</button>
+      </div>
+    </section>
+
+    <!-- Teacher Mode -->
+    <section id="teacher-mode" class="hidden">
+      <h2>Teacher Mode</h2>
+      <div class="docs">
+        <h3>Documentation</h3>
+        <p>
+          Welcome to sCAIF Teacher Mode. Here you’ll find complete docs on how to code sCAIF:
+          <ul>
+            <li><b>DATA:</b> Load datasets</li>
+            <li><b>NEURON:</b> Define activation functions</li>
+            <li><b>NETWORK:</b> Build networks</li>
+            <li><b>TRAIN:</b> Train models</li>
+            <li><b>MATH:</b> Run expressions</li>
+            <li><b>EVALUATE:</b> Evaluate models</li>
+            <li><b>EXPORT:</b> Export models (PY, JS, JAR, JSON, sCAIF)</li>
+            <li><b>FUNCTION / CALL:</b> Create reusable workflows</li>
+            <li><b>TOOL:</b> Integrate external tools</li>
+            <li><b>IF / ELSE / LOOP:</b> Control flow</li>
+          </ul>
+          You can also create JSON Assignments for learners to import.
+        </p>
+      </div>
+      <div class="editor">
+        <textarea id="teacherDSL" placeholder="Write your sCAIF code here..."></textarea>
+        <div class="actions">
+          <button id="runTeacher">Run DSL</button>
+          <button id="downloadAssignment">Download JSON Assignment</button>
+        </div>
+        <pre id="teacherOutput"></pre>
+      </div>
+    </section>
+
+    <!-- Learner Mode -->
+    <section id="learner-mode" class="hidden">
+      <h2>Learner Mode</h2>
+      <div class="assignment-import">
+        <label for="assignmentFile">Import JSON Assignment:</label>
+        <input type="file" id="assignmentFile">
+      </div>
+      <div class="editor">
+        <textarea id="learnerDSL" placeholder="Write or edit your sCAIF code here..."></textarea>
+        <div class="actions">
+          <button id="runLearner">Run DSL</button>
+        </div>
+        <pre id="learnerOutput"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 sCAIF Webapp</p>
+  </footer>
+
+  <!-- Load WASM runtime glue -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
